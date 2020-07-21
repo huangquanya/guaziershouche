@@ -90,7 +90,8 @@ header .header-help:before{
 
 .nav-page {
     width: 10.005rem /* 375.2/37.5 */;
-    height: 5.413rem /* 203/37.5 */;;
+    height: 5.413rem /* 203/37.5 */;
+    overflow-x: hidden;
  }
 .nav-page .swiper-nav-container {
     width: 10rem;
@@ -201,3 +202,78 @@ header .header-help:before{
     background-image: url(https://cli-sta.guazistatic.com/c2c_wap/rcb-jumpjump@2x.04165cd090393be215588ad451ef62b8.png);
     background-size: 100% 100%;
 }
+
+.second-car{
+    padding-bottom: .427rem /* 16/37.5 */;
+}
+.index-colum {
+    background-color: #fff;
+    border-top: .16rem /* 6/37.5 */ solid #f5f7fa;
+}
+.index-colum .colum-title {
+    position: relative;
+    height: 1.493rem /* 56/37.5 */;
+    line-height: 1.493rem /* 56/37.5 */;
+}
+
+.colum-title h3{
+    float: left;
+    padding-left: .533rem /* 20/37.5 */;
+    font-size: .4rem /* 15/37.5 */;
+}
+
+.colum-title a {
+    float: right;
+    padding-right: .533rem /* 20/37.5 */;
+    font-size: .32rem /* 12/37.5 */;
+    font-weight: 300;
+    color: #8f96a0;
+}
+
+.colum-title a:after {
+    content: '';
+    display: inline-block;
+    width: .133rem /* 5/37.5 */;
+    height: .133rem /* 5/37.5 */;
+    margin-top: -.053rem /* 2/37.5*/;
+    margin-left: .053rem /* 2/37.5 */;
+    vertical-align: middle;
+    border-left: 1px solid #b3bbc6;
+    border-top: 1px solid #b3bbc6;
+    transform: rotate(135deg);
+}
+
+.index-colum .second-entry-list {
+    width: 100%;
+    display: flex;
+    padding-top: .293rem /* 11/37.5 */;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+.index-colum .second-entry-list li {
+    width: 25%;
+    font-size: .373rem /* 14/37.5 */;
+    font-weight: 300;
+    line-height: .373rem /* 14/37.5 */;
+    text-align: center;
+}
+.index-colum .second-entry-list a {
+    display: block;
+    max-width: 1.707rem /* 64/37.5 */;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: .267rem /* 10/37.5 */ 0 .373rem /* 14/37.5 */;
+}
+.index-colum .second-entry-list.brand .icon {
+    display: inline-block;
+    width: .427rem /* 16/37.5 */;
+    height: .427rem /* 16/37.5 */;
+    vertical-align: middle;
+    margin-top: -.053rem /* 2/37.5 */;
+    margin-right: .16rem /* 6/37.5 */;
+    background-size: .427rem /* 16/37.5 */ auto;
+    overflow: hidden;
+}
+
