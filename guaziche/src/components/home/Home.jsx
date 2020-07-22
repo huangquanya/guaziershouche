@@ -165,7 +165,7 @@ const Home = () => {
                                 <span class="text-explain">低价开好车</span>
                             </div>
                             <div class="operate-item-pic">
-                                <img src="https://image.guazistatic.com/gz01171213/14/21/505ea8f711348250086e0f439f07a18c.png@base@tag=imgScale" alt="今日超值" title="今日超值"/>
+                                <img src="https://image.guazistatic.com/gz01171213/14/21/505ea8f711348250086e0f439f07a18c.png@base@tag=imgScale" alt="今日超值" title="今日超值" />
                             </div>
                         </Link>
                     </li>
@@ -178,7 +178,7 @@ const Home = () => {
                                 <span class="text-explain">降价更划算</span>
                             </div>
                             <div class="operate-item-pic">
-                                <img src="https://image.guazistatic.com/gz01171213/14/24/2168acbc8b3e62f1f321326a50752cf1.png@base@tag=imgScale" alt="降价急售" title="降价急售"/>
+                                <img src="https://image.guazistatic.com/gz01171213/14/24/2168acbc8b3e62f1f321326a50752cf1.png@base@tag=imgScale" alt="降价急售" title="降价急售" />
                             </div>
                         </Link>
                     </li>
@@ -191,20 +191,20 @@ const Home = () => {
                                 <span class="">新车二手价</span>
                             </div>
                             <div class="operate-item-pic">
-                                <img src="https://image.guazistatic.com/gz01171213/14/25/dba014c8b6cbb30e44968851e17ebd52.png@base@tag=imgScale" alt="准新车" title="准新车"/>
+                                <img src="https://image.guazistatic.com/gz01171213/14/25/dba014c8b6cbb30e44968851e17ebd52.png@base@tag=imgScale" alt="准新车" title="准新车" />
                             </div>
                         </Link>
                     </li>
                     <li class="operate-item sc-operate-item-3 ">
                         <Link to="https://m.maodou.com/?ca_s=xcsop_guaziwap&amp;ca_n=middsmalldf4">
-                             <div class="operate-item-text">
+                            <div class="operate-item-text">
                                 <p>
                                     爆款SUV
                                 </p>
                                 <span class="">新车首付3千起</span>
                             </div>
                             <div class="operate-item-pic">
-                                <img src="https://image.guazistatic.com/gz01180627/19/56/3a568ad65bf36a6bb07ff020c717e7fb.png@base@tag=imgScale" alt="爆款SUV" title="爆款SUV"/>
+                                <img src="https://image.guazistatic.com/gz01180627/19/56/3a568ad65bf36a6bb07ff020c717e7fb.png@base@tag=imgScale" alt="爆款SUV" title="爆款SUV" />
                             </div>
                         </Link>
                     </li>
@@ -212,16 +212,171 @@ const Home = () => {
                         <Link to="/buy/r19/">
                             <div class="operate-item-text">
                                 <p>
-                                    分期购车  
+                                    分期购车
                                 </p>
                                 <span class="">轻松买车0压力</span>
                             </div>
                             <div class="operate-item-pic">
-                                <img src="https://image.guazistatic.com/gz01171213/14/25/3ce048128f34b24fddc936801efdcc6c.png@base@tag=imgScale" alt="分期购车" title="分期购车"/>
+                                <img src="https://image.guazistatic.com/gz01171213/14/25/3ce048128f34b24fddc936801efdcc6c.png@base@tag=imgScale" alt="分期购车" title="分期购车" />
                             </div>
                         </Link>
-                     </li>
+                    </li>
                 </ul>
+
+                <div className="recommend-car-foryou">
+                    <div className="recommendercar-foryou__title">为你推荐</div>
+                    <ul className="recommdercar-foryou_ul">
+                        <li className="recommendercar-foryou_li">
+                            <Link to="/buy/">
+                                <img src="https://image1.guazistatic.com/qn200722125101cb53877d9c5eb4f218596936f70b39b2.jpg?imageView2/1/w/240/h/160/q/99" alt="" />
+                                <span className="icon-tag-text">5人在关注</span>
+                                <div className="recommendcar-content">
+                                    <h3>现代途胜</h3>
+                                    <div className="carname">2015款 1.6T 双离合两驱智能型</div>
+                                    <div className="carprice">9.46万</div>
+                                    <span className="find-same-car">找相似</span>
+                                    <span className="icon-tag-org_square">红包<br/>3000元</span>
+                                </div>
+                            </Link>
+                        </li>
+                        <li className="recommendercar-foryou_li">
+                            <Link to="/buy/">
+                                <img src="https://image1.guazistatic.com/qn200722125101cb53877d9c5eb4f218596936f70b39b2.jpg?imageView2/1/w/240/h/160/q/99" alt="" />
+                                <span className="icon-tag-text">5人在关注</span>
+                                <div className="recommendcar-content">
+                                    <h3>现代途胜</h3>
+                                    <div className="carname">2015款 1.6T 双离合两驱智能型</div>
+                                    <div className="carprice">9.46万</div>
+                                    <span className="find-same-car">找相似</span>
+                                    <span className="today-recommend_main">今日主推</span>
+
+                                </div>
+                            </Link>
+                        </li>                        <li className="recommendercar-foryou_li">
+                            <Link to="/buy/">
+                                <img src="https://image1.guazistatic.com/qn200722125101cb53877d9c5eb4f218596936f70b39b2.jpg?imageView2/1/w/240/h/160/q/99" alt="" />
+                                <span className="icon-tag-text">5人在关注</span>
+                                <div className="recommendcar-content">
+                                    <h3>现代途胜</h3>
+                                    <div className="carname">2015款 1.6T 双离合两驱智能型</div>
+                                    <div className="carprice">9.46万</div>
+                                    <span className="find-same-car">找相似</span>
+                                    <span className="today-recommend_main">今日主推</span>
+
+                                </div>
+                            </Link>
+                        </li>                        <li className="recommendercar-foryou_li">
+                            <Link to="/buy/">
+                                <img src="https://image1.guazistatic.com/qn200722125101cb53877d9c5eb4f218596936f70b39b2.jpg?imageView2/1/w/240/h/160/q/99" alt="" />
+                                <span className="icon-tag-text">5人在关注</span>
+                                <div className="recommendcar-content">
+                                    <h3>现代途胜</h3>
+                                    <div className="carname">2015款 1.6T 双离合两驱智能型</div>
+                                    <div className="carprice">9.46万</div>
+                                    <span className="find-same-car">找相似</span>
+                                    <span className="today-recommend_main">今日主推</span>
+
+                                </div>
+                            </Link>
+                        </li>                        <li className="recommendercar-foryou_li">
+                            <Link to="/buy/">
+                                <img src="https://image1.guazistatic.com/qn200722125101cb53877d9c5eb4f218596936f70b39b2.jpg?imageView2/1/w/240/h/160/q/99" alt="" />
+                                <span className="icon-tag-text">5人在关注</span>
+                                <div className="recommendcar-content">
+                                    <h3>现代途胜</h3>
+                                    <div className="carname">2015款 1.6T 双离合两驱智能型</div>
+                                    <div className="carprice">9.46万</div>
+                                    <span className="find-same-car">找相似</span>
+                                    <span className="today-recommend_main">今日主推</span>
+
+                                </div>
+                            </Link>
+                        </li>                        <li className="recommendercar-foryou_li">
+                            <Link to="/buy/">
+                                <img src="https://image1.guazistatic.com/qn200722125101cb53877d9c5eb4f218596936f70b39b2.jpg?imageView2/1/w/240/h/160/q/99" alt="" />
+                                <span className="icon-tag-text">5人在关注</span>
+                                <div className="recommendcar-content">
+                                    <h3>现代途胜</h3>
+                                    <div className="carname">2015款 1.6T 双离合两驱智能型</div>
+                                    <div className="carprice">9.46万</div>
+                                    <span className="find-same-car">找相似</span>
+                                    <span className="today-recommend_main">今日主推</span>
+
+                                </div>
+                            </Link>
+                        </li>                        <li className="recommendercar-foryou_li">
+                            <Link to="/buy/">
+                                <img src="https://image1.guazistatic.com/qn200722125101cb53877d9c5eb4f218596936f70b39b2.jpg?imageView2/1/w/240/h/160/q/99" alt="" />
+                                <span className="icon-tag-text">5人在关注</span>
+                                <div className="recommendcar-content">
+                                    <h3>现代途胜</h3>
+                                    <div className="carname">2015款 1.6T 双离合两驱智能型</div>
+                                    <div className="carprice">9.46万</div>
+                                    <span className="find-same-car">找相似</span>
+                                    <span className="today-recommend_main">今日主推</span>
+
+                                </div>
+                            </Link>
+                        </li>                        <li className="recommendercar-foryou_li">
+                            <Link to="/buy/">
+                                <img src="https://image1.guazistatic.com/qn200722125101cb53877d9c5eb4f218596936f70b39b2.jpg?imageView2/1/w/240/h/160/q/99" alt="" />
+                                <span className="icon-tag-text">5人在关注</span>
+                                <div className="recommendcar-content">
+                                    <h3>现代途胜</h3>
+                                    <div className="carname">2015款 1.6T 双离合两驱智能型</div>
+                                    <div className="carprice">9.46万</div>
+                                    <span className="find-same-car">找相似</span>
+                                    <span className="today-recommend_main">今日主推</span>
+
+                                </div>
+                            </Link>
+                        </li>                        <li className="recommendercar-foryou_li">
+                            <Link to="/buy/">
+                                <img src="https://image1.guazistatic.com/qn200722125101cb53877d9c5eb4f218596936f70b39b2.jpg?imageView2/1/w/240/h/160/q/99" alt="" />
+                                <span className="icon-tag-text">5人在关注</span>
+                                <div className="recommendcar-content">
+                                    <h3>现代途胜</h3>
+                                    <div className="carname">2015款 1.6T 双离合两驱智能型</div>
+                                    <div className="carprice">9.46万</div>
+                                    <span className="find-same-car">找相似</span>
+                                    <span className="today-recommend_main">今日主推</span>
+
+                                </div>
+                            </Link>
+                        </li>                        <li className="recommendercar-foryou_li">
+                            <Link to="/buy/">
+                                <img src="https://image1.guazistatic.com/qn200722125101cb53877d9c5eb4f218596936f70b39b2.jpg?imageView2/1/w/240/h/160/q/99" alt="" />
+                                <span className="icon-tag-text">5人在关注</span>
+                                <div className="recommendcar-content">
+                                    <h3>现代途胜</h3>
+                                    <div className="carname">2015款 1.6T 双离合两驱智能型</div>
+                                    <div className="carprice">9.46万</div>
+                                    <span className="find-same-car">找相似</span>
+                                    <span className="today-recommend_main">今日主推</span>
+
+                                </div>
+                            </Link>
+                        </li>                        <li className="recommendercar-foryou_li">
+                            <Link to="/buy/">
+                                <img src="https://image1.guazistatic.com/qn200722125101cb53877d9c5eb4f218596936f70b39b2.jpg?imageView2/1/w/240/h/160/q/99" alt="" />
+                                <span className="icon-tag-text">5人在关注</span>
+                                <div className="recommendcar-content">
+                                    <h3>现代途胜</h3>
+                                    <div className="carname">2015款 1.6T 双离合两驱智能型</div>
+                                    <div className="carprice">9.46万</div>
+                                    <span className="find-same-car">找相似</span>
+                                    <span className="today-recommend_main">今日主推</span>
+
+                                </div>
+                            </Link>
+                        </li>
+                    </ul>
+                </div>
+                <p className="recommendercar-foryou-nomore">
+                    暂无更多，遇到喜欢的就赶紧预约吧
+                </p>
+                <div></div>
+
             </div>
             <Bottom />
         </div>

@@ -55,6 +55,7 @@ body {
   font-size: 16px;
   margin: 0 auto;
   padding-top: 44px;/* iphone规则 header 让位*/
+  -webkit-font-smoothing: antialiased;
 }
 
 .hidden,
