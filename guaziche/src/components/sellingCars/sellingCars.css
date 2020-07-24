@@ -1,5 +1,9 @@
+
 .sell-page{
     font: .373rem /* 14/37.5 *//1.5 PingFangSC-Regular,helvetica neue,tahoma,arial,hiragino sans gb,microsoft yahei,sans-serif;
+    position: relative;
+    top: -44px;
+    box-sizing: border-box;
 }
 .sell-page .sell-head {
     width: 100%;
@@ -11,6 +15,7 @@
     left: 0;
     right: 0;
     opacity: 1;
+    z-index: 999;
 }
 .sell-page .sell-head h1 {
     line-height: 1.173rem /* 44/37.5 */;
@@ -47,7 +52,7 @@
     width: 100%;
     overflow: hidden;
 }
-
+/* 选车卖出模块 */
 .sell-content .sell-car-box{
     margin: 0 .533rem /* 20/37.5 */;
     background-color: #fff;
@@ -181,4 +186,193 @@
     text-align: center;
     border: .053rem /* 2/37.5 */ solid #f7f7f9;
     
+}
+
+/* 瓜子报价优势 块 */
+.sell-car-qotation {
+    margin-top: .64rem /* 24/37.5 */;
+    padding: .533rem /* 20/37.5 */;
+}
+.sell-car-qotation .sell-qotation_title{
+    font-size: .48rem /* 18/37.5 */;
+    font-weight: 700;
+    color: #303741;
+    line-height: .64rem /* 24/37.5 */;
+    margin-bottom: .32rem /* 12/37.5 */;
+    text-align: start;
+}
+.sell-market{
+    display: flex;
+    height: 1.973rem /* 74/37.5 */;
+    border-radius: .107rem /* 4/37.5 */;
+    margin-bottom: .32rem /* 12/37.5 */;
+    padding-right: .187rem /* 7/37.5 */;
+    background-color: #fff;
+}
+.sell-market .sell-market_item{
+    display: flex;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    padding: 0 .267rem /* 10/37.5 */;
+}
+.sell-market .sell-market_item-flag{
+    position: relative;
+    width: 3.2rem /* 120/37.5 */;
+    margin-right: .213rem /* 8/37.5 */;
+}
+.sell-market .sell-market_item-flag::after{
+    content: "";
+    width: .027rem /* 1/37.5 */;
+    height: 1.067rem /* 40/37.5 */;
+    margin: .453rem /* 17/37.5 */ 0;
+    background-color: #eff2f6;
+    transform: scaleX(.5);
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.sell-market_logo{
+    width: .693rem /* 26/37.5 */;
+    height: .693rem /* 26/37.5 */;
+    margin-top: .08rem /* 3/37.5 */;
+}
+.sell-market_lable{
+    font-size: .32rem /* 12/37.5 */;
+    color: #8f96a0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 2.667rem /* 100/37.5 */;
+}
+.sell-market_data{
+    font-size: .533rem /* 20/37.5 */;
+    color: #303741;
+    font-weight: 700;
+    font-family: DIN-Bold;
+    text-align: initial;
+}
+.sell-market_data .sell-market_unit{
+    margin-left: -0.01rem ;
+    color: #303741;
+    font-size: .32rem /* 12/37.5 */;
+    font-weight: 400;
+}
+.sell-trade_item {
+    background-color: #fff;
+    border-radius: .107rem /* 4/37.5 */;
+    padding: 0 .427rem /* 16/37.5 */ .427rem /* 16/37.5 */;
+    margin-bottom: .32rem /* 12/37.5 */;
+    text-align: initial;
+}
+.sell-trade_head {
+    font-size: .32rem /* 12/37.5 */;
+    color: #5f6670;
+    line-height: .4rem /* 15/37.5 */;
+    padding: .427rem /* 16/37.5 */ 0 .32rem /* 12/37.5 */;
+    overflow: hidden;
+}
+.sell-trade_buyer {
+    float: left;
+    padding-right: .16rem /* 6/37.5 */;
+}
+.sell-trade_city{
+    color: #8f96a0;
+    float: left;
+    padding-left: .16rem /* 6/37.5 */;
+    border-left: .027rem /* 1/37.5 */ solid #eff2f6;
+}
+.sell-trade_time{
+    color: #8f96a0;
+    float: right;
+}
+.sell-trade_main{
+    position: relative;
+}
+.sell-trade_main img{
+    width: 3.2rem /* 120/37.5 */;
+    height: 2.133rem /* 80/37.5 */;
+    border-radius: .107rem /* 4/37.5 */;
+    position: absolute;
+}
+.sell-trade_main .sell-trade_content{
+    padding-left: 3.467rem /* 130/37.5 */;
+}
+.sell-trade_title{
+    font-size: .4rem /* 15/37.5 */;
+    color: #303741;
+    line-height: .533rem /* 20/37.5 */;
+    display: flex;
+    flex-direction: column;
+    -webkit-line-clamp: 2;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin-bottom: .107rem /* 4/37.5 */;
+}
+.trade_price{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    justify-content: space-around;
+    font-size: .32rem /* 12/37.5 */;
+    line-height: .4rem /* 15/37.5 */;
+}
+.sell-trade_price-guazi{
+    width: 1.867rem /* 70/37.5 */;
+    background-color: #fff;
+    border: 1px solid #ffdcd1;
+    border-radius: .053rem /* 2/37.5 */;
+    line-height: 1;
+    text-align: center;
+    color: #ff7147;
+}
+.sell-trade_price-guazi h2 {
+    padding: .053rem /* 2/37.5 */ 0;
+    background-color: rgba(255,113,71,.1);
+    border-bottom: .027rem /* 1/37.5 */ solid #ffdcd1;
+    font-size: .267rem /* 10/37.5 */;
+    font-weight: 400;
+}
+.sell-trade_price-guazi p{
+    padding: .053rem /* 2/37.5 */ 0;
+    font-size: .4rem /* 15/37.5 */;
+    font-weight: 700;
+}
+.sell-trade_price-vs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+.sell-trade_price-vs img{
+    width: .533rem /* 20/37.5 */;
+    height: .533rem /* 20/37.5 */;
+}
+.sell-trade_price-shichang{
+    width: 1.867rem /* 70/37.5 */;
+    background-color: #fff;
+    border: .027rem /* 1/37.5 */ solid #d8dde6;
+    border-radius: .053rem /* 2/37.5 */;
+    line-height: 1;
+    text-align: center;
+}
+.sell-trade_price-shichang h2{
+    padding: .053rem /* 2/37.5 */ 0;
+    background-color: #f5f7fa;
+    border-bottom: .027rem /* 1/37.5 */ solid #d8dde6;
+    font-size: .267rem /* 10/37.5 */;
+    color: #8f96a0;
+}
+.sell-trade_price-shichang p{
+    padding: .053rem /* 2/37.5 */ 0;
+    font-size: .4rem /* 15/37.5 */;
+    color: #5f6670;
+    font-weight: 700;
 }
