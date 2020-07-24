@@ -1,0 +1,184 @@
+.sell-page{
+    font: .373rem /* 14/37.5 *//1.5 PingFangSC-Regular,helvetica neue,tahoma,arial,hiragino sans gb,microsoft yahei,sans-serif;
+}
+.sell-page .sell-head {
+    width: 100%;
+    height: 1.173rem /* 44/37.5 */;
+    background-color: #fff;
+    font-size: .427rem /* 16/37.5 */;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    opacity: 1;
+}
+.sell-page .sell-head h1 {
+    line-height: 1.173rem /* 44/37.5 */;
+    font-family: sans-serif;
+    font-size: .427rem /* 16/37.5 */;
+    color: #303741;
+}
+.sell-page .sell-head .sell-head-icon {
+    height: .587rem /* 22/37.5 */;
+    width: .587rem /* 22/37.5 */;
+    position: absolute;
+    right: .587rem /* 22/37.5 */;
+    top: .293rem /* 11/37.5 */;
+}
+.sell-page .sell-head .sell-head-icon img{
+    height: 100%;
+    width: 100%;
+}
+.sell-main {
+    width: 100%;
+}
+.sell-main .sell-banner {
+    background-image: url("https://image1.guazistatic.com/qn200401191517b4aaa80a9da54b79e95d2c3ca747f462.jpg?imageView2/2");
+    width: 100%;
+    height: 6.933rem /* 260/37.5 */;
+    background-size: cover;
+}
+
+.sell-main .sell-content{
+    position: absolute;
+    top: 5.867rem /* 220/37.5 */;
+    left: 0;
+    right: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.sell-content .sell-car-box{
+    margin: 0 .533rem /* 20/37.5 */;
+    background-color: #fff;
+    border-radius: .107rem /* 4/37.5 */ .107rem /* 4/37.5 */ 0 0;
+    position: relative;
+    overflow: hidden;
+}
+.sell-content .sell-car-box .sell-box_brand-img{
+    position: absolute;
+    top: -.533rem /* 20/37.5 */;
+    right: -.533rem /* 20/37.5 */;
+    width: 2.667rem /* 100/37.5 */;
+    height: 2.667rem /* 100/37.5 */;
+    opacity: .1;
+}
+
+.sell-content .sell-car-box .cell-box_title{
+    height: 1.6rem /* 60/37.5 */;
+    background: url(https://sta.guazistatic.com/c2c-prerender/img/042aa44.png);
+    background-size: cover;
+    font: .373rem /* 14/37.5 *//1.5 PingFangSC-Regular,helvetica neue,tahoma,arial,hiragino sans gb,microsoft yahei,sans-serif;
+    font-size: .48rem /* 18/37.5 */;
+    line-height: 1.493rem /* 56/37.5 */;
+    font-weight: 700;
+    text-align: center;
+    color: #976114;
+}
+
+.sell-car-box .active-show .sell-box_value{
+    position: relative;
+    font-size: .4rem /* 15/37.5 */;
+    color: #303741;
+    line-height: .533rem /* 20/37.5 */;
+    text-align: start;
+}
+.sell-car-box .active-show .sell-box_header{
+    padding-left: .427rem /* 16/37.5 */;
+    margin: .32rem /* 12/37.5 */ 0;
+}
+.active-show .sell-box_header::after{
+    content: "";
+    display: inline-block;
+    position: absolute;
+    right: .427rem /* 16/37.5 */;
+    top: .08rem /* 3/37.5 */;
+    width: .16rem /* 6/37.5 */;
+    height: .16rem /* 6/37.5 */;
+    border-top: .053rem /* 2/37.5 */ solid #cdd3da;
+    border-left: .053rem /* 2/37.5 */ solid #cdd3da;
+    transform: rotate(135deg);
+    font-weight: 300;
+}
+
+.active-show .sell-box_brand{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 .427rem /* 16/37.5 */;
+    margin-bottom: .373rem /* 14/37.5 */;
+    height: 3.413rem /* 128/37.5 */;
+}
+
+.sell-box_brand .sell-box_brand-item{
+    width: 20%;
+    margin-bottom: .293rem /* 11/37.5 */;
+}
+.sell-box_brand .sell-box_brand-item img{
+    width: .853rem /* 32/37.5 */;
+    height: .853rem /* 32/37.5 */;
+    margin: 0 auto;
+}
+.sell-box_other {
+    position: relative;
+    display: flex;
+    padding-left: .427rem /* 16/37.5 */;
+    margin-bottom: .32rem /* 12/37.5 */;
+    text-align: start;
+}
+.sell-box_otherwrap{
+    flex: 1;
+}
+.sell-box_lable{
+    font-size: .32rem /* 12/37.5 */;
+    color: #8f96a0;
+    line-height: .48rem /* 18/37.5 */;
+    margin-bottom: .107rem /* 4/37.5 */;
+}
+.sell-box_other .sell-box_value{
+    position: relative;
+    width: 100%;
+    font-size: .4rem /* 15/37.5 */;
+    color: #303741;
+    line-height: .533rem /* 20/37.5 */;
+}
+.sell-box_other .sell-box_value::after{
+        content: "";
+        display: inline-block;
+        position: absolute;
+        right: .427rem /* 16/37.5 */;
+        top: .08rem /* 3/37.5 */;
+        width: .16rem /* 6/37.5 */;
+        height: .16rem /* 6/37.5 */;
+        border-top: .053rem /* 2/37.5 */ solid #cdd3da;
+        border-left: .053rem /* 2/37.5 */ solid #cdd3da;
+        transform: rotate(135deg);
+        font-weight: 300;
+}
+
+.sell-box_data, .sell-box_mile{
+    flex: 1;
+}
+.sell-box_btns{
+    display: flex;
+    padding: .32rem /* 12/37.5 */ .427rem /* 16/37.5 */;
+    font-size: .373rem /* 14/37.5 */;
+    color: #fff;
+}
+.sell-box_btns .sell-box_direct{
+    width: 67%;
+    height: .96rem /* 36/37.5 */;
+    border-radius: .053rem /* 2/37.5 */;
+    line-height: .96rem /* 36/37.5 */;
+    background-color: #22ac38;
+}
+.sell-box_btns .sell-box_evaluate{
+    height: .96rem /* 36/37.5 */;
+    width: 2.667rem /* 100/37.5 */;
+    border-radius: .053rem /* 2/37.5 */;
+    line-height: .96rem /* 36/37.5 */;
+    margin-left: .267rem /* 10/37.5 */;
+    color: #5f6670;
+    text-align: center;
+    border: .053rem /* 2/37.5 */ solid #f7f7f9;
+    
+}

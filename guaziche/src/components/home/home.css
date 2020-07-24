@@ -276,6 +276,21 @@ header .header-help:before{
     background-size: .427rem /* 16/37.5 */ auto;
     overflow: hidden;
 }
+.icon-brand-more {
+    position: relative;
+    font-size: 0;
+    text-align: center;
+    background: #eff2f6;
+    border-radius: 50%;
+}
+.icon-brand-more i {
+    display: inline-block;
+    width: .053rem /* 2/37.5 */;
+    height: .053rem /* 2/37.5 */;
+    margin: .187rem /* 7/37.5 */ .027rem /* 1/37.5 */ 0;
+    background-color: #8f96a0;
+    border-radius: 50%;
+}
 
 .operate-list {
     width: 100%;
@@ -381,7 +396,7 @@ header .header-help:before{
 
 .recommdercar-foryou_ul .recommendercar-foryou_li .icon-tag-text{
     position: absolute;
-    top: 2.133rem /* 80/37.5 */;
+    bottom: 2.933rem /* 110/37.5 */;
     left: .053rem /* 2/37.5 */;
     display: inline-block;
     padding: 0 .213rem /* 8/37.5 */;

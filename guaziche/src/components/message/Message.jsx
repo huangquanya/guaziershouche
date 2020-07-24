@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Bottom from '../bottom/Bottom'
+
 
 class Message extends Component {
     state = {  }
@@ -7,7 +7,6 @@ class Message extends Component {
         return ( 
             <div>
                 message
-                <Bottom/>
             </div>
          );
     }

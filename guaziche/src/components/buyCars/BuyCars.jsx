@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Bottom from '../bottom/Bottom'
 
 class Buycars extends Component {
     state = {  }
@@ -7,7 +6,6 @@ class Buycars extends Component {
         return ( 
             <div>
                 buycars
-                <Bottom/>
                 
             </div>
          );

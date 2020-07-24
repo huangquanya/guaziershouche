@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './mine.css'
-import Bottom from '../bottom/Bottom'
 
 class Mine extends Component {
     state = {  }
@@ -8,7 +7,6 @@ class Mine extends Component {
         return ( 
             <div>
                 mine
-                <Bottom/>
             </div>
          );
     }
