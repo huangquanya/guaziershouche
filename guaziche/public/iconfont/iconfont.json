@@ -6,6 +6,34 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "796463",
+      "name": "车辆信息",
+      "font_class": "cheliangxinxi",
+      "unicode": "e60c",
+      "unicode_decimal": 58892
+    },
+    {
+      "icon_id": "6077742",
+      "name": "预约",
+      "font_class": "reserve",
+      "unicode": "e624",
+      "unicode_decimal": 58916
+    },
+    {
+      "icon_id": "10416496",
+      "name": "用户过户-01",
+      "font_class": "yonghuguohu-",
+      "unicode": "e61f",
+      "unicode_decimal": 58911
+    },
+    {
+      "icon_id": "13763186",
+      "name": "车辆认证",
+      "font_class": "cheliangrenzheng",
+      "unicode": "e605",
+      "unicode_decimal": 58885
+    },
+    {
       "icon_id": "705665",
       "name": "房子",
       "font_class": "fangzi",

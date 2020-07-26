@@ -1,0 +1,85 @@
+
+header {
+    display: flex;
+    margin: 0;
+    min-width: 320px;
+    max-width: 540px;
+    height: .853rem /* 32/37.5 */;
+    width: 100%;
+    padding: .16rem /* 6/37.5 */ 0;
+    background-color: #fff;
+    box-shadow: 0 .027rem /* 1/37.5 */ .053rem /* 2/37.5 */ 0 rgba(0,0,0,.04);
+    z-index: 999;
+}
+header .header-position {
+    position: relative;
+    display: inline-block;
+    padding-left: .427rem /* 16/37.5 */;
+    padding-right: .4rem /* 15/37.5 */;
+    font-weight: 300;
+    color: #303741;
+    line-height: .853rem /* 32/37.5 */;
+    border-right: none;
+    vertical-align: baseline;
+}
+
+ .header-position:after, .header-input:before {
+    background: url(../../../assets/fontImg/home.png) no-repeat;
+    background-size: 2rem ;
+}
+header .header-position:after {
+    content: '';
+    display: inline-block;
+    width: .267rem /* 10/37.5 */;
+    height: .267rem /* 10/37.5 */;
+    margin-left: .16rem /* 6/37.5 */;
+    background-position: 0 -.427rem /* 16/37.5 */;
+}
+
+header .header-input {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    height: .853rem /* 32/37.5 */;
+    font-size: .373rem /* 14/37.5 */;
+    color: #bec5cf;
+    background-color: #eff2f6;
+    text-align: center;
+    line-height: .853rem /* 32/37.5 */;
+    border-radius: .4rem /* 15/37.5 */;
+}
+
+header .header-input:before{
+    content: '';
+    display: inline-block;
+    width: .4rem /* 15/37.5 */;
+    height: .4rem /* 15/37.5 */;
+    vertical-align: middle;
+    margin: -.08rem /* 3/37.5 */ .107rem /* 4/37.5 */ 0 0;
+}
+
+/* header .header-help {
+    display: inline-block;
+    height: .853rem ;
+    width: .907rem ;
+} */
+
+/* header .icon-gouwuche2:before, .icon-tian:before{
+    content: '';
+    display: block;
+    width: .533rem ;
+    height: .533rem ;
+    margin-top: .16rem ;
+    margin-left: .187rem ;
+    background-position: -.64rem  -.693rem ; 
+ }*/
+.icon-gouwuche2,.icon-tian{
+    width: .907rem;
+    height: .853rem;
+    font-size: .6rem;
+    color: #5f6670;
+} 
+.icon-gouwuche2 {
+    font-size: .5rem;
+    margin-left: .266667rem /* 10/37.5 */;
+}

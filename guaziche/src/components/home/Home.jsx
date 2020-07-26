@@ -40,7 +40,7 @@ const Home = () => {
         })
     }, [])
     return (
-        <div>
+        <div className="home">
             <header>
                 <div className="header-position">南昌</div>
                 <div className="header-input">搜索您要的车</div>

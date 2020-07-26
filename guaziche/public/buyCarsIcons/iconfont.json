@@ -1,0 +1,51 @@
+{
+  "id": "1958471",
+  "name": "guazi",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "2441157",
+      "name": "促销",
+      "font_class": "iconfontcuxiao",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "4104270",
+      "name": "直播",
+      "font_class": "zhibo",
+      "unicode": "e6e6",
+      "unicode_decimal": 59110
+    },
+    {
+      "icon_id": "16141422",
+      "name": "直播",
+      "font_class": "zhibo-copy",
+      "unicode": "e6e7",
+      "unicode_decimal": 59111
+    },
+    {
+      "icon_id": "352484",
+      "name": "购物车2",
+      "font_class": "gouwuche2",
+      "unicode": "e610",
+      "unicode_decimal": 58896
+    },
+    {
+      "icon_id": "470038",
+      "name": "田",
+      "font_class": "tian",
+      "unicode": "e608",
+      "unicode_decimal": 58888
+    },
+    {
+      "icon_id": "1999802",
+      "name": "购物车加",
+      "font_class": "gouwuchejia",
+      "unicode": "e6d2",
+      "unicode_decimal": 59090
+    }
+  ]
+}

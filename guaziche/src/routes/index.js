@@ -2,11 +2,12 @@ import React from 'react'
 import { Redirect } from 'react-router-dom'
 import Home from '../components/home/Home'
 import SellCars from '../components/sellingCars/SellCars'
-import BuyCars from '../components/buyCars/BuyCars'
 import Message from '../components/message/Message'
 import Mine from '../components/mine/Mine'
 import BlankLayout from '../layouts/BlankLayout'
 import BtbarLayout from '../layouts/BtbarLayout'
+import BuyCars from '../components/buycars/wrapper/Wrapper'
+import Detail from '../components/detailInfo/DetailInfor'
 
 export default [{
     component:BlankLayout,
@@ -25,7 +26,8 @@ export default [{
             },
             {
                 path:'/buy/',
-                component:BuyCars
+                component:BuyCars,
+               
             },
             {
                 path:'/sell',
@@ -39,6 +41,11 @@ export default [{
                 path:'/mine/',
                 component:Mine
             },
+            {
+                path:'/detail',
+                component:Detail
+            }
         ]
-    }]
+    }
+]
 }]

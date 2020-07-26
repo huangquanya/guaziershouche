@@ -1,0 +1,84 @@
+.filter {
+    display: flex;
+    z-index: 999;
+    min-width: 320px;
+    max-width: 540px;
+    width: 100%;
+    height: 2.053333rem /* 77/37.5 */;
+    flex-direction: column;
+}
+.around-remote:after, .around-tit:before, .car-price-sell:before, .collection li:first-of-type span i, .collection li:last-child span i, .icon-car, .icon-column:before, .icon-home:before, .icon-line:before, .icon-multicolor, .icon-other, .icon-reset:before, .icon-totel:before, .iconbg, .iconcollect, .lines, .nav-item:after, .nav-subscribe:before, .subs-notip:before, .swich-three i {
+    background: url(../../../assets/fontImg/icon.png) no-repeat;
+    background-size: 210px auto;
+  }
+
+.filter-nav {
+    position: relative;
+    width: 100%;
+    height: 1.093333rem /* 41/37.5 */;
+    display: flex;
+    background-color: #ffffff;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+
+.filter-nav-third {
+    position: relative;
+    z-index: 999;
+    width: 100%;
+    height: .96rem /* 36/37.5 */;
+    display: flex;
+    padding: .533333rem/* 20/37.5 */;
+    justify-content: space-around;
+    background-color: #fff;
+    box-shadow: 0 .026667rem .053333rem 0 rgba(0, 0, 0, .06);
+    box-sizing: border-box;
+}
+
+.nav-item {
+    position: relative;
+    display: inline-block;
+    font-size: 100%/* 12/37.5 */;
+    line-height: 1.093333rem/* 41/37.5 */;
+    color: #333;
+    text-align: center;
+    padding-right: .266667rem/* 10/37.5 */;
+    max-width: 18%;
+    white-space: nowrap;
+    overflow: hidden;
+    height: 1.093333rem /* 41/37.5 */;
+    text-overflow: ellipsis;
+
+}
+
+.nav-item:after {
+    content: "";
+    width: .16rem/* 6/37.5 */;
+    height: .08rem/* 3/37.5 */;
+    vertical-align: middle;
+    margin-left: .106667rem/* 4/37.5 */;
+    background-position: -145px -48px;
+    position: absolute;
+    right: 0;
+    top: .506667rem/* 19/37.5 */;
+}
+
+.filter-nav-third {
+    padding: 0 .053333rem/* 2/37.5 */;
+    width: 100%;
+    height: .96rem/* 36/37.5 */;
+}
+
+.third-nav-item-icon {
+    width: 1.92rem/* 72/37.5 */;
+    height: .746667rem/* 28/37.5 */;
+    line-height: .746667rem/* 28/37.5 */;
+    background-color: #f5f8fa;
+    text-align: center;
+    color: black;
+}
+
+.third-nav-item-icon .yanxuan {
+    background: #e6f7ea;
+    color: #21ae37;
+}

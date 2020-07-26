@@ -1,0 +1,18 @@
+.buycars-wrapper {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    min-width: 320px;
+    max-width: 540px;
+    overflow: hidden;
+}
+.top-wrapper {
+    height: 3.226667rem /* 121/37.5 */;
+    width: 100%;
+    position: fixed;
+    top: 1.173rem /* 44/37.5 */;
+    left: 0;
+    flex-direction: column;
+}
+

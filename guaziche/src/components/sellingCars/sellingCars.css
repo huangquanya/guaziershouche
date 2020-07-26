@@ -4,6 +4,7 @@
     position: relative;
     top: -44px;
     box-sizing: border-box;
+    background-color: #f5f7fa;
 }
 .sell-page .sell-head {
     width: 100%;
@@ -376,3 +377,49 @@
     color: #5f6670;
     font-weight: 700;
 }
+.sell-chart {
+    background-color: #fff;
+    border-radius: .107rem /* 4/37.5 */;
+    min-height: 3.76rem /* 141/37.5 */;
+}
+.sell-chart_head{
+    padding: 0 .427rem /* 16/37.5 */;
+    display: flex;
+    font-size: .4rem /* 15/37.5 */;
+    color: #303741;
+    line-height: 1.413rem /* 53/37.5 */;
+}
+.sell-chart_title{
+    width: 3.333rem /* 125/37.5 */;
+}
+.sell-chart_main{
+    padding: 0 .427rem /* 16/37.5 */;
+}
+.sell-lineChart{
+    position: relative;
+}
+.sell-chart_bottom{
+    padding: .213rem /* 8/37.5 */ .427rem /* 16/37.5 */;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 0 0 .107rem /* 4/37.5 */ .107rem /* 4/37.5 */;
+    box-shadow: inset 0 1px 0 0 #eff2f6;
+    background-color: #fff;
+    text-align: start;
+}
+.sell-chart_summary{
+    flex:1 1;
+    font-size: .32rem /* 12/37.5 */;
+    color: #8f96a0;
+}
+.sell-chart_subscribe{
+    padding: .16rem /* 6/37.5 */ .32rem /* 12/37.5 */;
+    background-color: #fff;
+    border: .027rem /* 1/37.5 */ solid #d8dde6;
+    border-radius: .053rem /* 2/37.5 */;
+    font-size: .293rem /* 11/37.5 */;
+    color: #5f6670;
+    line-height: 1;
+}
+

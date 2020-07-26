@@ -1,0 +1,433 @@
+.detail-page {
+    width: 100%;
+    height: 100%;
+    min-width: 320px;
+    max-width: 540px;
+    text-align: initial;
+}
+.header {
+    display: flex;
+    margin: 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: .853rem /* 32/37.5 */;
+    width: 100%;
+    padding: .16rem /* 6/37.5 */ 0;
+    background-color: #ffffff;
+    box-shadow: 0 .027rem /* 1/37.5 */ .053rem /* 2/37.5 */ 0 rgba(0,0,0,.04);
+    z-index: 999;
+}
+.main-layout {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.img-show {
+    width: 100%;
+    position: relative;
+    height: 6.133333rem /* 230/37.5 */;
+    background-color: pink;
+}
+.pic-count {
+    width: .933333rem /* 35/37.5 */;
+    height: .666667rem /* 25/37.5 */;
+    background: rgb(58, 57, 57);
+    opacity: 30%;
+    position: absolute;
+    border-radius: 40%;
+    right: .4rem /* 15/37.5 */;
+    top: 5.066667rem /* 190/37.5 */;
+}
+.pic-num {
+    color: #ffffff;
+    z-index: 900;
+    height: .666667rem /* 25/37.5 */;
+    line-height: .666667rem /* 25/37.5 */;
+    text-align: center;
+}
+.car-info--box1 {
+    padding-left: .4rem /* 15/37.5 */;
+    padding-right: .4rem /* 15/37.5 */;
+    background: #ffffff;
+}
+.pirce {
+    /* width: 100%; */
+    height: 2.666667rem /* 100/37.5 */;
+    display: flex;
+    flex-direction: column;
+}
+.pirce-text {
+    width: 100%;
+    height:.933333rem /* 35/37.5 */;
+}
+.pirce-num:before {
+    content: " 补贴后";
+    font-size: .373333rem /* 14/37.5 */;
+    color: black;
+    margin-right: .266667rem /* 10/37.5 */;
+}
+.pirce-num{
+    font-size: .72rem /* 27/37.5 */;
+    line-height:.933333rem /* 35/37.5 */;
+    color: red;
+    /* margin-right: .32rem 12/37.5; */
+}
+.pirce-num:after{
+    content: "万";
+    font-size: .373333rem /* 14/37.5 */;
+    color: red;
+}
+.pirce-text--after {
+    font-size: .32rem /* 12/37.5 */;
+    color: #697079;
+    margin-left: .266667rem /* 10/37.5 */;
+}
+.yuanjia{
+    width: 100%;
+    height: .533333rem /* 20/37.5 */;
+    color: #8f96a0;
+}
+.feiyong-box {
+    width: 100%;
+    height: 1.2rem /* 45/37.5 */;
+    display: flex;
+    margin-bottom: 0;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.feiyong {
+    height: .8rem /* 30/37.5 */;
+    display: flex;
+    align-items: center;
+    
+}
+.fenqi {
+    color: #ffffff;
+    height: .8rem /* 30/37.5 */;
+    padding-left: .266667rem /* 10/37.5 */;
+    padding-right: .266667rem /* 10/37.5 */;
+    background: #ff7147;
+    border-radius: .08rem /* 3/37.5 */;
+    line-height: .8rem /* 30/37.5 */;
+    margin-right: .266667rem /* 10/37.5 */;
+}
+.butie {
+    color: #ff7147;
+    height: .8rem /* 30/37.5 */;
+    background: #ffffff;
+    padding-left: .266667rem /* 10/37.5 */;
+    padding-right: .266667rem /* 10/37.5 */;
+    border-radius: .08rem /* 3/37.5 */;
+    line-height: .8rem /* 30/37.5 */;
+    margin-left: .266667rem /* 10/37.5 */;
+    border: 1px solid #ef7347;
+}
+.chakan {
+    height: .8rem /* 30/37.5 */;
+    display: flex;
+    align-items: center;
+}
+.chakan-text {
+    font-size: .373333rem /* 14/37.5 */;
+    color: #ff7147;
+    height: .8rem /* 30/37.5 */;
+    line-height: .8rem /* 30/37.5 */;
+    margin-right: .426667rem /* 16/37.5 */;
+}
+.chakan-text:after {
+    content: "";
+    width: .16rem /* 6/37.5 */;
+    height: .24rem /* 9/37.5 */;
+    margin-left: .266667rem;
+    background: url(../../assets/fontImg/chakan.png) no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    margin-top: .266667rem /* 10/37.5 */;
+}
+.kuanshi {
+    height: 1.386667rem /* 52/37.5 */;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.car-name {
+    font-size: .453333rem /* 17/37.5 */;
+    color: #000000;
+    font-weight: 700;
+}
+.car-type-box {
+  display: flex;
+}
+.car-type {
+    font-size: .32rem /* 12/37.5 */;
+    color: #8f96a0; 
+    background: #dddfe0;
+    margin-right: .4rem /* 15/37.5 */;
+}
+.gouchefangshi {
+    /* width: 100%; */
+    display: flex;
+    align-items: center;
+    height: 1.173333rem /* 44/37.5 */;
+    justify-content: space-between;
+}
+.fenqi-span{
+    color: #ef7347;
+    margin-right: .533333rem /* 20/37.5 */;
+}
+.shoufu-span{
+    color: #000000;
+}
+.right-icon {
+    /* position: absolute; */
+    height: 1.173333rem /* 44/37.5 */;
+    width: .026667rem /* 1/37.5 */;
+    /* background: #000; */
+    margin-right: .16rem /* 6/37.5 */;
+    /* right: 0; */
+}
+.right-icon:after {
+    content: "";
+    background: url(../../assets/fontImg/right-icon.png) no-repeat;
+    width: .16rem /* 6/37.5 */;
+    height: .24rem /* 9/37.5 */;
+    background-size: 100% 100%;
+    position: absolute;
+    margin-top: .533333rem /* 20/37.5 */;
+}
+.fuwu {
+    display: flex;
+    align-items: center;
+    height: 1.173333rem /* 44/37.5 */;
+    justify-content: space-between;
+}
+.fuwu-text ,.fuwu-type1 ,.fuwu-type2{
+    color: #000000;
+    margin-right: .8rem /* 30/37.5 */;
+
+}
+.fuwu-type1:before, .fuwu-type2:before {
+    content: "";
+    width: .426667rem /* 16/37.5 */;
+    height: .426667rem /* 16/37.5 */;
+    position: absolute;
+    background: url(../../assets/fontImg/lvgou.png) no-repeat;
+    margin-left: -.426667rem /* 16/37.5 */;
+    margin-bottom: 0;
+    background-size: 94px auto;
+    background-position: -26px -66px;
+    transform: scale(0.8);
+}
+.zaixianjiangche {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 1.493333rem /* 56/37.5 */;
+}
+.icon-zhibo {
+    color: #22ac38;
+    margin-right: .4rem /* 15/37.5 */;
+}
+.jiangche-text1 {
+    color: #000000;
+    font-size: .4rem /* 15/37.5 */;
+    font-weight: 700;
+    margin-right: .4rem /* 15/37.5 */;
+}
+.jiangche-text2 {
+    color: #000000;
+    margin-right: .4rem /* 15/37.5 */;
+}
+.jiangche-button{
+    width: 1.866667rem /* 70/37.5 */;
+    height: 1.066667rem /* 40/37.5 */;
+    line-height: 1.066667rem /* 40/37.5 */;
+    text-align: center;
+    color: #22ac38;
+    background:#a6f0b7;
+    border-radius: .053333rem /* 2/37.5 */;
+}
+.kongbaihe {
+    width: 100%;
+    height: .133333rem /* 5/37.5 */;
+    /* margin: .053333rem 2/37.5 0; */
+    background: #e5e2e2;
+}
+.chuxiao {
+    padding-left: .4rem /* 15/37.5 */;
+    padding-right: .4rem /* 15/37.5 */;
+    background: #ffffff;
+    height: 1.866667rem /* 70/37.5 */;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.icon-iconfontcuxiao {
+    color: #ff7e4f;
+    margin-right: .4rem /* 15/37.5 */;
+    font-size: .533333rem /* 20/37.5 */;
+    font-weight: 400;
+}
+.chuxiao-text1{
+    color: #ef7347;
+    font-size: .426667rem /* 16/37.5 */;
+    font-weight: 900;
+}
+.chuxiao-text2 {
+    color: #8f96a0;
+    font-size: .373333rem /* 14/37.5 */;
+    font-weight: 900;
+    margin-right: .533333rem /* 20/37.5 */;
+}
+#right-icon {
+    margin-top: .213333rem /* 8/37.5 */;
+    content: "";
+    background: url(../../assets/fontImg/right-icon.png) no-repeat;
+    width: .16rem /* 6/37.5 */;
+    height: .24rem /* 9/37.5 */;
+    background-size: 100% 100%;
+    position: absolute;
+}
+.paihangbang {
+    width: 100%;
+    height: 1.333333rem /* 50/37.5 */;
+    background: blue;
+}
+.dangan {
+    /* height: 8rem 300/37.5; */
+    padding-left: .4rem /* 15/37.5 */;
+    padding-right: .4rem /* 15/37.5 */;
+    background: #ffffff;
+}
+.dangan-header--wrapper{
+    height: 1.6rem /* 60/37.5 */;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.dangan-title {
+    font-size: .426667rem /* 16/37.5 */;
+    font-weight: 900;
+}
+.carInfo-link {
+    color: #8f96a0;
+    font-weight: 400;
+}
+.carInfo-item--title {
+    height: 1.066667rem /* 40/37.5 */;
+    display: flex;
+    color: #000000;
+    justify-content: space-around;
+    align-items: center;
+    background: #dddfe0;
+    font-size: .426667rem /* 16/37.5 */;
+    border-radius: .266667rem /* 10/37.5 */;
+}
+.carInfo-detail--row {
+    height: 1.866667rem /* 70/37.5 */;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+}
+.carInfo-detail--item {
+    height: 1.333333rem /* 50/37.5 */;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* margin-top: .266667rem 10/37.5; */
+}
+.car-detail--item {
+    color: #8f96a0;
+}
+.detail-num{
+    color: #000000;
+    font-size: .373333rem /* 14/37.5 */;
+    font-weight: 400;
+}
+.detail-num--link{
+    color: #22ac38;
+    font-size: .373333rem /* 14/37.5 */;
+    margin-right: .266667rem /* 10/37.5 */;
+}
+.detail-num--link:after {
+    content: "";
+    width: .133333rem /* 5/37.5 */;
+    height: .133333rem /* 5/37.5 */;
+    background-size: 100% 100%;
+    border-top: 1px solid #22ac38;
+    border-right: 1px solid #22ac38;
+    transform: rotate(45deg);
+    position: absolute;
+    margin-top: .186667rem /* 7/37.5 */;
+}
+.dangan-canshu--wrapper{
+    height: 1.066667rem /* 40/37.5 */;
+    display: block;
+    text-align: center;
+}
+.dangan-canshu--text{
+    height: 1.066667rem /* 40/37.5 */;
+    line-height: 1.066667rem /* 40/37.5 */;
+    color: #8f96a0;
+    font-size: .373333rem /* 14/37.5 */;
+}
+.dangan-canshu--text::after {
+    content: "";
+    background: url(../../assets/fontImg/right-icon.png);
+    width: .266667rem /* 10/37.5 */;
+    height: .266667rem /* 10/37.5 */;
+    background-size: 100% 100%;
+    position: absolute;
+    margin-left: .133333rem /* 5/37.5 */;
+    margin-top: .4rem /* 15/37.5 */;
+}
+.shouhou {
+    height: 7.386667rem /* 277/37.5 */;
+    padding-left: .4rem /* 15/37.5 */;
+    padding-right: .4rem /* 15/37.5 */;
+    background: #ffffff;
+}
+.shouhou-header{
+    height: 1.493333rem /* 56/37.5 */;
+}
+.shouhou-content{
+    height: 5.893333rem /* 221/37.5 */;
+}
+.shouhou-content--box{
+    height: 5.466667rem /* 205/37.5 */;
+}
+.shouhou-content--item{
+    height: 4.48rem /* 168/37.5 */;
+    display: flex;
+    flex-wrap: wrap;
+}
+.shouhou-item--box{
+    flex: 1;
+    display: block;
+    height: 2.24rem /* 84/37.5 */;
+    /* align-items: center; */
+    text-align: center;
+    width: 3.066667rem /* 115/37.5 */;
+}
+.shouhou-content--img {
+    display: inline-block;
+    width: 1.066667rem /* 40/37.5 */;
+    height: 1.066667rem /* 40/37.5 */;
+    margin-bottom: .266667rem /* 10/37.5 */;
+    
+}
+.shouhou-content--text{
+    /* text-align: center; */
+}
+.gouchefuwu {
+    height: 5.866667rem /* 220/37.5 */;
+    background: blue;
+}
+.xuangouzhinan{
+    height: 7.2rem /* 270/37.5 */;
+    background: yellow;
+}

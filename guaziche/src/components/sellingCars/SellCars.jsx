@@ -1,9 +1,18 @@
-import React from 'react';
-import './sellingCars.css'
+import './sellingCars.css';
+import React, { useEffect, useState, memo } from 'react';
+import { connect } from 'react-redux';
+import * as actionTypes from './store/actionCreator';
+// import { carList } from '../../api/config';
 
-const list = [{ carband: '大众' }, { carband: '大众' }, { carband: '大众' }, { carband: '大众' }, { carband: '大众' }, { carband: '大众' }, { carband: '大众' }, { carband: '大众' }, { carband: '大众' }, { carband: '更多' }]
 
-const SellingCars = () => {
+const SellingCars = (props) => {
+    const { carBandList } = props;
+    const { getCarBandListDataDispatch } = props
+    useEffect(() => {
+        if (!carBandList.length) {
+            getCarBandListDataDispatch()
+        }
+    }, [])
     return (
         <div className="sell-page">
             <div className="sell-head">
@@ -28,10 +37,10 @@ const SellingCars = () => {
                                 </div>
                             <div className="sell-box_brand">
                                 {
-                                    list.map(i => {
+                                    carBandList.map(i => {
                                         return (
                                             <div className="sell-box_brand-item">
-                                                <img src="https://image.guazistatic.com/files/brand/1207.png" alt="" />
+                                                <img src={i.imgUrl} alt="" />
                                                 <p>{i.carband}</p>
                                             </div>
                                         )
@@ -164,11 +173,57 @@ const SellingCars = () => {
                                 </div>
                             </div>
                         </div>
-
+                        <div className="sell-chart">
+                            <div className="sell-chart_head">
+                                <div className="sell-chart_title">
+                                    近半年售卖走势
+                                </div>
+                            </div>
+                            <div className="sell-chart_main">
+                                <div className="sell-lineChart">
+                                    <canvas id="lineMount" style={{ width: 334.5, height: 149 }}></canvas>
+                                    <div className="sell-lineChart_f2-tooltip">
+                                        <div>售出239l</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="sell-chart_bottom">
+                                <div className="sell-chart_summary">
+                                    销售情况波动，快去预约评估，快人一步
+                                </div>
+                                <span className="sell-chart_subscribe">
+                                    去预约
+                                </span>
+                            </div>
+                        </div>
                     </div>
                     <div className="sell-car-guide">
-                        卖车流程与指南
+                        <h2 className="sell-guide_title">
+                            卖车流程与指南
+                        </h2>
+                        <div className="sell-guide_card">
+                            <ul className="sell-tab">
+                                <li className="sell-tab_item">
+                                    <span class="iconfont icon-reserve"></span>
+                                </li>
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAABGdBTUEAALGPC/xhBQAAASFJREFUKBVjZEACkybNlvnHwib04dX9aw0NDX+QpOBMRhirv3++ACM7Y97///+ZgGIPPmopLGlwdMTQBJIEg59cv/4zAgGUq8B/7WHoqlWrmKF8OAXXUJGe/pHhH+NeuAzDf/Xnb7/7AW2EGQKWgmsA8fKz444wMzIdgWn69++f/oTpizxgfBCNogEkkJcVvwfosnMgNhj8/2c+YcJscRgXQ8PMmTNZ/zP+F4IrYGL6z8bG9QvOhzFANDAoWb7/5Qhn+MegABP/y8CwPSsr+j2MD7cBqJhJUFw+5P//fyowSQYmxt1FmfGn4HwgA66BX1RJ/d8/Bg24JBPDgcLMhKNwPpQB18D89x/cnYzMDEcLMxMPoCvG4E+cuUgOhDEkkAQAhwdZ6YUIG+sAAAAASUVORK5CYII="
+                                    alt="" className="sell-tab_step" />
+                                <li className="sell-tab_item">
+                                    <span class="iconfont icon-cheliangxinxi"></span>
+                                </li>
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAABGdBTUEAALGPC/xhBQAAASFJREFUKBVjZEACkybNlvnHwib04dX9aw0NDX+QpOBMRhirv3++ACM7Y97///+ZgGIPPmopLGlwdMTQBJIEg59cv/4zAgGUq8B/7WHoqlWrmKF8OAXXUJGe/pHhH+NeuAzDf/Xnb7/7AW2EGQKWgmsA8fKz444wMzIdgWn69++f/oTpizxgfBCNogEkkJcVvwfosnMgNhj8/2c+YcJscRgXQ8PMmTNZ/zP+F4IrYGL6z8bG9QvOhzFANDAoWb7/5Qhn+MegABP/y8CwPSsr+j2MD7cBqJhJUFw+5P//fyowSQYmxt1FmfGn4HwgA66BX1RJ/d8/Bg24JBPDgcLMhKNwPpQB18D89x/cnYzMDEcLMxMPoCvG4E+cuUgOhDEkkAQAhwdZ6YUIG+sAAAAASUVORK5CYII="
+                                    alt="" className="sell-tab_step" />
+                                <li className="sell-tab_item">
+                                    <span class="iconfont icon-cheliangrenzheng"></span>
+                                </li>
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAABGdBTUEAALGPC/xhBQAAASFJREFUKBVjZEACkybNlvnHwib04dX9aw0NDX+QpOBMRhirv3++ACM7Y97///+ZgGIPPmopLGlwdMTQBJIEg59cv/4zAgGUq8B/7WHoqlWrmKF8OAXXUJGe/pHhH+NeuAzDf/Xnb7/7AW2EGQKWgmsA8fKz444wMzIdgWn69++f/oTpizxgfBCNogEkkJcVvwfosnMgNhj8/2c+YcJscRgXQ8PMmTNZ/zP+F4IrYGL6z8bG9QvOhzFANDAoWb7/5Qhn+MegABP/y8CwPSsr+j2MD7cBqJhJUFw+5P//fyowSQYmxt1FmfGn4HwgA66BX1RJ/d8/Bg24JBPDgcLMhKNwPpQB18D89x/cnYzMDEcLMxMPoCvG4E+cuUgOhDEkkAQAhwdZ6YUIG+sAAAAASUVORK5CYII="
+                                    alt="" className="sell-tab_step" />
+                                <li className="sell-tab_item">
+                                    <span class="iconfont icon-yonghuguohu-"></span>
+                                </li>
+                            </ul>
                         </div>
+                    </div>
                     <div className="sell-car-advantage">
                         瓜子卖车优势
                         </div>
@@ -178,4 +233,14 @@ const SellingCars = () => {
     );
 }
 
-export default SellingCars;
+const mapStateToProps = (state) => ({
+    carBandList: state.sellCar.carBandList
+})
+const mapDispatchToProps = (dispatch) => {
+    return {
+        getCarBandListDataDispatch() {
+            dispatch(actionTypes.getCarBandList());
+        }
+    }
+}
+export default connect(mapStateToProps, mapDispatchToProps)(memo(SellingCars));
