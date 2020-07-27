@@ -5,6 +5,7 @@ import 'swiper/swiper-bundle.css';
 // import Swiper bundle with all modules installed
 import Swiper from 'swiper/bundle';
 import { Link } from 'react-router-dom';
+import ScrollBar from './scroll';
 
 
 
@@ -104,6 +105,7 @@ const Home = () => {
                     <div className="nav-swiper-pagination"></div>
                 </div>
             </div>
+            <ScrollBar/>
             <div className="recommend-cars-box">
                 <div className="recommend-cars">
                     <div>

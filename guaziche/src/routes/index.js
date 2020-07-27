@@ -21,30 +21,30 @@ export default [{
                 render:()=><Redirect to={"/home"} />
             },
             {
-                path:'/home/',
+                path:'/home',
                 component:Home
             },
             {
-                path:'/buy/',
+                path:'/buy',
                 component:BuyCars,
-               
+                routes:{
+                    path:'/buy/detail',
+                    component:Detail
+                }
             },
             {
                 path:'/sell',
                 component:SellCars
             },            
             {
-                path:'/message/',
+                path:'/message',
                 component:Message
             },            
             {
-                path:'/mine/',
+                path:'/mine',
                 component:Mine
             },
-            {
-                path:'/detail',
-                component:Detail
-            }
+
         ]
     }
 ]
