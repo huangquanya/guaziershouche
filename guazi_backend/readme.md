@@ -1,0 +1,2 @@
+使用mocker-api 和express模拟后端发送数据
+mocker-api内置解决了跨域问题，暂时没有跨域处理
