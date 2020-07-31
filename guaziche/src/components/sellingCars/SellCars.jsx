@@ -23,9 +23,9 @@ const SellingCars = (props) => {
             </div>
             <div className="sell-main">
                 <div className="sell-banner">
-
                 </div>
                 <div className="sell-content">
+                    <div className="swiper_text_container"></div>
                     <div className="sell-car-box">
                         <img src="https://image.guazistatic.com/files/brand/1207.png" className="sell-box_brand-img" alt="" />
                         <div className="cell-box_title">
@@ -205,21 +205,25 @@ const SellingCars = (props) => {
                             <ul className="sell-tab">
                                 <li className="sell-tab_item">
                                     <span class="iconfont icon-reserve"></span>
+                                    一键预约
                                 </li>
                                 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAABGdBTUEAALGPC/xhBQAAASFJREFUKBVjZEACkybNlvnHwib04dX9aw0NDX+QpOBMRhirv3++ACM7Y97///+ZgGIPPmopLGlwdMTQBJIEg59cv/4zAgGUq8B/7WHoqlWrmKF8OAXXUJGe/pHhH+NeuAzDf/Xnb7/7AW2EGQKWgmsA8fKz444wMzIdgWn69++f/oTpizxgfBCNogEkkJcVvwfosnMgNhj8/2c+YcJscRgXQ8PMmTNZ/zP+F4IrYGL6z8bG9QvOhzFANDAoWb7/5Qhn+MegABP/y8CwPSsr+j2MD7cBqJhJUFw+5P//fyowSQYmxt1FmfGn4HwgA66BX1RJ/d8/Bg24JBPDgcLMhKNwPpQB18D89x/cnYzMDEcLMxMPoCvG4E+cuUgOhDEkkAQAhwdZ6YUIG+sAAAAASUVORK5CYII="
                                     alt="" className="sell-tab_step" />
                                 <li className="sell-tab_item">
                                     <span class="iconfont icon-cheliangxinxi"></span>
+                                    免费评估
                                 </li>
                                 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAABGdBTUEAALGPC/xhBQAAASFJREFUKBVjZEACkybNlvnHwib04dX9aw0NDX+QpOBMRhirv3++ACM7Y97///+ZgGIPPmopLGlwdMTQBJIEg59cv/4zAgGUq8B/7WHoqlWrmKF8OAXXUJGe/pHhH+NeuAzDf/Xnb7/7AW2EGQKWgmsA8fKz444wMzIdgWn69++f/oTpizxgfBCNogEkkJcVvwfosnMgNhj8/2c+YcJscRgXQ8PMmTNZ/zP+F4IrYGL6z8bG9QvOhzFANDAoWb7/5Qhn+MegABP/y8CwPSsr+j2MD7cBqJhJUFw+5P//fyowSQYmxt1FmfGn4HwgA66BX1RJ/d8/Bg24JBPDgcLMhKNwPpQB18D89x/cnYzMDEcLMxMPoCvG4E+cuUgOhDEkkAQAhwdZ6YUIG+sAAAAASUVORK5CYII="
                                     alt="" className="sell-tab_step" />
                                 <li className="sell-tab_item">
                                     <span class="iconfont icon-cheliangrenzheng"></span>
+                                    当天上架
                                 </li>
                                 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAABGdBTUEAALGPC/xhBQAAASFJREFUKBVjZEACkybNlvnHwib04dX9aw0NDX+QpOBMRhirv3++ACM7Y97///+ZgGIPPmopLGlwdMTQBJIEg59cv/4zAgGUq8B/7WHoqlWrmKF8OAXXUJGe/pHhH+NeuAzDf/Xnb7/7AW2EGQKWgmsA8fKz444wMzIdgWn69++f/oTpizxgfBCNogEkkJcVvwfosnMgNhj8/2c+YcJscRgXQ8PMmTNZ/zP+F4IrYGL6z8bG9QvOhzFANDAoWb7/5Qhn+MegABP/y8CwPSsr+j2MD7cBqJhJUFw+5P//fyowSQYmxt1FmfGn4HwgA66BX1RJ/d8/Bg24JBPDgcLMhKNwPpQB18D89x/cnYzMDEcLMxMPoCvG4E+cuUgOhDEkkAQAhwdZ6YUIG+sAAAAASUVORK5CYII="
                                     alt="" className="sell-tab_step" />
                                 <li className="sell-tab_item">
                                     <span class="iconfont icon-yonghuguohu-"></span>
+                                    签约过户
                                 </li>
                             </ul>
                         </div>
