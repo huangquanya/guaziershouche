@@ -74,7 +74,7 @@ const Home = () => {
                 <div className="swiper-nav-container">
                     <div className="swiper-wrapper">
                         <div className="swiper-slide">
-                            <ul class="nav-con">
+                            <ul className="nav-con">
                                 <li><Link to="/buy/" style={{ 'background-image': "url('https://image.guazistatic.com/gz01180305/12/20/96b37dbb3b487c72f79aafaed490a97a.png@base@tag=imgScale')" }}>二手车</Link></li>
                                 <li><Link to="/buy/" style={{ 'background-image': "url('https://image.guazistatic.com/gz01180305/12/21/12fb30f1f90191d85b8b363b77fb2f88.png@base@tag=imgScale')" }} >严选车</Link></li>
                                 <li><Link to="/buy/" style={{ 'background-image': "url('https://image1.guazistatic.com/qn19043010522775b65e5487c657695d90d46d3c7f5758.png?imageView2/2')" }}>全国购</Link></li>
@@ -88,7 +88,7 @@ const Home = () => {
                             </ul>
                         </div>
                         <div className="swiper-slide">
-                            <ul class="nav-con">
+                            <ul className="nav-con">
                                 <li><Link to="/buy/" style={{ 'background-image': "url('https://image1.guazistatic.com/qn1910221630042fa217e753b00d2e03c8a7b3b49d3d6a.png?imageView2/2')" }}>养车</Link></li>
                                 <li><Link to="/buy/" style={{ 'background-image': "url('https://image1.guazistatic.com/qn181126181048b6ac120b3db3c5f1b4450a2ba7c139b0.png?imageView2/2')" }} >查成交</Link></li>
                                 <li><Link to="/buy/" style={{ 'background-image': "url('https://image1.guazistatic.com/qn1811261811252aa3504b910d552427e7d3a8d4ae8df5.png?imageView2/2')" }}>申请分期</Link></li>
@@ -154,70 +154,70 @@ const Home = () => {
                     <li className="list-item"><Link ><i className="icon" style={{ 'background-image': "url('https://image.guazistatic.com/files/brand/1207.png')" }}></i>大众</Link></li>
                     <li className="list-item"><Link ><i className="icon" style={{ 'background-image': "url('https://image.guazistatic.com/files/brand/1207.png')" }}></i>大众</Link></li>
                     <li className="list-item"><Link ><i className="icon" style={{ 'background-image': "url('https://image.guazistatic.com/files/brand/1207.png')" }}></i>大众</Link></li>
-                    <li><Link href="/buy/"><span class="icon icon-brand-more"><i></i><i></i><i></i></span>更多</Link></li>
+                    <li><Link to="/buy/"><span className="icon icon-brand-more"><i></i><i></i><i></i></span>更多</Link></li>
                 </ul>
                 {/* 二手车运营位 豆腐块 */}
-                <ul class="operate-list second-operate-list">
-                    <li class="operate-item sc-operate-item-0">
+                <ul className="operate-list second-operate-list">
+                    <li className="operate-item sc-operate-item-0">
                         <Link to="/buy/r15/">
-                            <div class="operate-item-text">
+                            <div className="operate-item-text">
                                 <p>
                                     今日超值                                                                                </p>
-                                <span class="text-explain">低价开好车</span>
+                                <span className="text-explain">低价开好车</span>
                             </div>
-                            <div class="operate-item-pic">
+                            <div className="operate-item-pic">
                                 <img src="https://image.guazistatic.com/gz01171213/14/21/505ea8f711348250086e0f439f07a18c.png@base@tag=imgScale" alt="今日超值" title="今日超值" />
                             </div>
                         </Link>
                     </li>
-                    <li class="operate-item sc-operate-item-1">
+                    <li className="operate-item sc-operate-item-1">
                         <Link to="/buy/r3/">
-                            <div class="operate-item-text">
+                            <div className="operate-item-text">
                                 <p>
                                     降价急售
                                 </p>
-                                <span class="text-explain">降价更划算</span>
+                                <span className="text-explain">降价更划算</span>
                             </div>
-                            <div class="operate-item-pic">
+                            <div className="operate-item-pic">
                                 <img src="https://image.guazistatic.com/gz01171213/14/24/2168acbc8b3e62f1f321326a50752cf1.png@base@tag=imgScale" alt="降价急售" title="降价急售" />
                             </div>
                         </Link>
                     </li>
-                    <li class="operate-item sc-operate-item-2">
+                    <li className="operate-item sc-operate-item-2">
                         <Link to="/buy/r4/">
-                            <div class="operate-item-text">
+                            <div className="operate-item-text">
                                 <p>
                                     准新车
                                 </p>
-                                <span class="">新车二手价</span>
+                                <span className="">新车二手价</span>
                             </div>
-                            <div class="operate-item-pic">
+                            <div className="operate-item-pic">
                                 <img src="https://image.guazistatic.com/gz01171213/14/25/dba014c8b6cbb30e44968851e17ebd52.png@base@tag=imgScale" alt="准新车" title="准新车" />
                             </div>
                         </Link>
                     </li>
-                    <li class="operate-item sc-operate-item-3 ">
+                    <li className="operate-item sc-operate-item-3 ">
                         <Link to="https://m.maodou.com/?ca_s=xcsop_guaziwap&amp;ca_n=middsmalldf4">
-                            <div class="operate-item-text">
+                            <div className="operate-item-text">
                                 <p>
                                     爆款SUV
                                 </p>
-                                <span class="">新车首付3千起</span>
+                                <span className="">新车首付3千起</span>
                             </div>
-                            <div class="operate-item-pic">
+                            <div className="operate-item-pic">
                                 <img src="https://image.guazistatic.com/gz01180627/19/56/3a568ad65bf36a6bb07ff020c717e7fb.png@base@tag=imgScale" alt="爆款SUV" title="爆款SUV" />
                             </div>
                         </Link>
                     </li>
-                    <li class="operate-item sc-operate-item-4" >
+                    <li className="operate-item sc-operate-item-4" >
                         <Link to="/buy/r19/">
-                            <div class="operate-item-text">
+                            <div className="operate-item-text">
                                 <p>
                                     分期购车
                                 </p>
-                                <span class="">轻松买车0压力</span>
+                                <span className="">轻松买车0压力</span>
                             </div>
-                            <div class="operate-item-pic">
+                            <div className="operate-item-pic">
                                 <img src="https://image.guazistatic.com/gz01171213/14/25/3ce048128f34b24fddc936801efdcc6c.png@base@tag=imgScale" alt="分期购车" title="分期购车" />
                             </div>
                         </Link>

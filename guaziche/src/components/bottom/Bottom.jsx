@@ -7,7 +7,7 @@ function Bottom() {
         <footer>
             <div className="foot-wrapper">
                 <Link to='/' className="lnk">
-                    <span class="iconfont icon-fangzi"></span>
+                    <span className="iconfont icon-fangzi"></span>
                     <div>首页</div>
                 </Link>
                 <Link to='/buy/' className="lnk">

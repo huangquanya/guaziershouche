@@ -226,7 +226,14 @@ const SellingCars = (props) => {
                                     签约过户
                                 </li>
                             </ul>
-                            <div className="swiper-wrapper"></div>
+                            <div className="sell-swiper-container">
+                                <div className="sell-swiper-wrapper">
+                                    <div className="sell-swiper-slide"></div>
+                                    <div className="sell-swiper-slide"></div>
+                                    <div className="sell-swiper-slide"></div>
+                                    <div className="sell-swiper-slide"></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div className="sell-car-advantage">

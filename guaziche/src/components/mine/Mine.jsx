@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './Mine.css';
+import './mine.css';
 import CarItem from '../../common/carItem/CarItem';
 
 
