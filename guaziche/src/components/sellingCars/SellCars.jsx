@@ -1,5 +1,5 @@
 import './sellingCars.css';
-import React, { useEffect, useState, memo } from 'react';
+import React, { useEffect, useState, memo, useRef } from 'react';
 import { connect } from 'react-redux';
 import * as actionTypes from './store/actionCreator';
 // import { carList } from '../../api/config';
@@ -8,11 +8,28 @@ import * as actionTypes from './store/actionCreator';
 const SellingCars = (props) => {
     const { carBandList } = props;
     const { getCarBandListDataDispatch } = props
+
+    const tabBar = useRef();
+    const swiperWrapper = useRef()
     useEffect(() => {
         if (!carBandList.length) {
             getCarBandListDataDispatch()
         }
     }, [])
+
+    const hadleTabClick = (e) => {
+        if (e.target.attributes["data-tab"] || e.target.parentElement.attributes["data-tab"]) {
+            let Nodes = tabBar.childNodes
+            let activeTab = e.target.attributes["data-tab"] ? e.target : e.target.parentElement;
+            let page = e.target.attributes["data-tab"] ? e.target.attributes["data-tab"].value : e.target.parentElement.attributes["data-tab"].value;
+            activeTab.classList.add("sell-tab_item--active")
+            swiperWrapper.current.style = `transform: translate3d(-${8.933 * (page - 1)}rem,0,0);`
+            console.log(e.target, tabBar.current, '获取了tabbar点击')
+        }
+    }
+
+
+
     return (
         <div className="sell-page">
             <div className="sell-head">
@@ -37,9 +54,9 @@ const SellingCars = (props) => {
                                 </div>
                             <div className="sell-box_brand">
                                 {
-                                    carBandList.map(i => {
+                                    carBandList.map((i, index) => {
                                         return (
-                                            <div className="sell-box_brand-item">
+                                            <div className="sell-box_brand-item" key={index + i.carband}>
                                                 <img src={i.imgUrl} alt="" />
                                                 <p>{i.carband}</p>
                                             </div>
@@ -202,36 +219,48 @@ const SellingCars = (props) => {
                             卖车流程与指南
                         </h2>
                         <div className="sell-guide_card">
-                            <ul className="sell-tab">
-                                <li className="sell-tab_item">
-                                    <span class="iconfont icon-reserve"></span>
+                            <ul className="sell-tab" ref={tabBar} onClick={hadleTabClick}>
+                                <li className="sell-tab_item" data-tab="1">
+                                    <span className="iconfont icon-reserve"></span>
                                     一键预约
                                 </li>
                                 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAABGdBTUEAALGPC/xhBQAAASFJREFUKBVjZEACkybNlvnHwib04dX9aw0NDX+QpOBMRhirv3++ACM7Y97///+ZgGIPPmopLGlwdMTQBJIEg59cv/4zAgGUq8B/7WHoqlWrmKF8OAXXUJGe/pHhH+NeuAzDf/Xnb7/7AW2EGQKWgmsA8fKz444wMzIdgWn69++f/oTpizxgfBCNogEkkJcVvwfosnMgNhj8/2c+YcJscRgXQ8PMmTNZ/zP+F4IrYGL6z8bG9QvOhzFANDAoWb7/5Qhn+MegABP/y8CwPSsr+j2MD7cBqJhJUFw+5P//fyowSQYmxt1FmfGn4HwgA66BX1RJ/d8/Bg24JBPDgcLMhKNwPpQB18D89x/cnYzMDEcLMxMPoCvG4E+cuUgOhDEkkAQAhwdZ6YUIG+sAAAAASUVORK5CYII="
                                     alt="" className="sell-tab_step" />
-                                <li className="sell-tab_item">
-                                    <span class="iconfont icon-cheliangxinxi"></span>
+                                <li className="sell-tab_item" data-tab="2">
+                                    <span className="iconfont icon-cheliangxinxi"></span>
                                     免费评估
                                 </li>
                                 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAABGdBTUEAALGPC/xhBQAAASFJREFUKBVjZEACkybNlvnHwib04dX9aw0NDX+QpOBMRhirv3++ACM7Y97///+ZgGIPPmopLGlwdMTQBJIEg59cv/4zAgGUq8B/7WHoqlWrmKF8OAXXUJGe/pHhH+NeuAzDf/Xnb7/7AW2EGQKWgmsA8fKz444wMzIdgWn69++f/oTpizxgfBCNogEkkJcVvwfosnMgNhj8/2c+YcJscRgXQ8PMmTNZ/zP+F4IrYGL6z8bG9QvOhzFANDAoWb7/5Qhn+MegABP/y8CwPSsr+j2MD7cBqJhJUFw+5P//fyowSQYmxt1FmfGn4HwgA66BX1RJ/d8/Bg24JBPDgcLMhKNwPpQB18D89x/cnYzMDEcLMxMPoCvG4E+cuUgOhDEkkAQAhwdZ6YUIG+sAAAAASUVORK5CYII="
                                     alt="" className="sell-tab_step" />
-                                <li className="sell-tab_item">
-                                    <span class="iconfont icon-cheliangrenzheng"></span>
+                                <li className="sell-tab_item" data-tab="3">
+                                    <span className="iconfont icon-cheliangrenzheng"></span>
                                     当天上架
                                 </li>
                                 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAABGdBTUEAALGPC/xhBQAAASFJREFUKBVjZEACkybNlvnHwib04dX9aw0NDX+QpOBMRhirv3++ACM7Y97///+ZgGIPPmopLGlwdMTQBJIEg59cv/4zAgGUq8B/7WHoqlWrmKF8OAXXUJGe/pHhH+NeuAzDf/Xnb7/7AW2EGQKWgmsA8fKz444wMzIdgWn69++f/oTpizxgfBCNogEkkJcVvwfosnMgNhj8/2c+YcJscRgXQ8PMmTNZ/zP+F4IrYGL6z8bG9QvOhzFANDAoWb7/5Qhn+MegABP/y8CwPSsr+j2MD7cBqJhJUFw+5P//fyowSQYmxt1FmfGn4HwgA66BX1RJ/d8/Bg24JBPDgcLMhKNwPpQB18D89x/cnYzMDEcLMxMPoCvG4E+cuUgOhDEkkAQAhwdZ6YUIG+sAAAAASUVORK5CYII="
                                     alt="" className="sell-tab_step" />
-                                <li className="sell-tab_item">
-                                    <span class="iconfont icon-yonghuguohu-"></span>
+                                <li className="sell-tab_item" data-tab="4">
+                                    <span className="iconfont icon-yonghuguohu-"></span>
                                     签约过户
                                 </li>
                             </ul>
                             <div className="sell-swiper-container">
-                                <div className="sell-swiper-wrapper">
-                                    <div className="sell-swiper-slide"></div>
-                                    <div className="sell-swiper-slide"></div>
-                                    <div className="sell-swiper-slide"></div>
-                                    <div className="sell-swiper-slide"></div>
+                                <div className="sell-swiper-wrapper" ref={swiperWrapper} >
+                                    <div className="sell-swiper-slide">
+                                        <section className="c-collapse">
+                                            <section className="c-collapse-item">
+                                                <div className="c-collapse-item_head">
+                                                    <h2 className="c-collapse-item_title">
+                                                        <span className="c-collapse-item_question">Q</span>
+                                                    卖车有什么条件？
+                                                    </h2>
+                                                    <i className="c-arrow"></i>
+                                                </div>
+                                            </section>
+                                        </section>
+                                    </div>
+                                    <div className="sell-swiper-slide">2</div>
+                                    <div className="sell-swiper-slide">3</div>
+                                    <div className="sell-swiper-slide">4</div>
                                 </div>
                             </div>
                         </div>

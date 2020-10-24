@@ -27,10 +27,6 @@ export default [{
             {
                 path:'/buy',
                 component:BuyCars,
-                routes:{
-                    path:'/buy/detail',
-                    component:Detail
-                }
             },
             {
                 path:'/sell',
@@ -44,6 +40,10 @@ export default [{
                 path:'/mine',
                 component:Mine
             },
+            {
+                path:'/detail',
+                component:Detail
+            }
 
         ]
     }

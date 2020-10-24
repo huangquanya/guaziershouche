@@ -464,4 +464,33 @@
     height: .533rem /* 20/37.5 */;
     font-size: .533rem /* 20/37.5 */;
     margin-bottom: .107rem /* 4/37.5 */;
+
+}
+.sell-swiper-container {
+    height: auto;
+    z-index: 0;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+}
+.sell-swiper-wrapper {
+    transform: translate3d(0,0,0);
+    transition-duration: 500ms;
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    transition-property: height,transform;
+    position: relative;
+    z-index: 1;
+    box-sizing: initial;
+}
+.sell-swiper-wrapper .sell-swiper-slide{
+    position: relative;
+    width: 8.933rem /* 335/37.5 */;
+    height: 13.333rem /* 500/37.5 */;
+    flex-shrink: 0;
+    background-color: pink;
 }
